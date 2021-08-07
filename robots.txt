@@ -1,0 +1,5 @@
+user-agent: *
+
+allow: /
+
+sitemap: https://agusg.000webhostapp.com/sitemap.xml

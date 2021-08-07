@@ -1,0 +1,2752 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Telex', sans-serif;
+    background-color: #ebebeb;
+}
+
+.derecha{
+    display: flex;
+}
+
+.animate__fadeIn{
+    animation-delay: 0.90s;
+    animation-duration: 1.5s;
+}
+
+@media (max-width: 1920px){
+
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    nav{
+        padding-right: 20px;
+    }
+
+    .contenedormenu1{
+        background: #fafafa;
+        display: flex;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .contenedormenu1 h1{
+        display: block;
+        margin: auto;
+        padding: 14px 0;
+    }
+
+    .contenedormenu1 h1:hover{
+        animation: pulse;
+        animation-duration: 0.60s;
+    }
+
+    .menu{
+        background-color: #fafafa;
+        margin: 0;
+        padding-right: 20px;
+    }
+
+    .menu li{
+        display: inline-block;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .menu a{
+        color: black;
+    }
+
+    #logo{
+        background-image: url(../imagenes/iconografia/logo.png);
+        background-size: 170px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 170px;
+        height: 50px;
+        text-indent: 190px;
+        overflow: hidden;
+    }
+
+    #iconoHamburguesa{
+        display: none;
+    }
+
+    #usuario{
+        background-image: url(../imagenes/iconografia/usuario.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 40px;
+        height: 40px;
+        text-indent: 40px;
+        overflow: hidden;
+    }
+
+    #info{
+        background-image: url(../imagenes/iconografia/informacion.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 40px;
+        height: 40px;
+        text-indent: 40px;
+        overflow: hidden;
+    }
+
+    #carrito{
+        background-image: url(../imagenes/iconografia/carrito-de-compras.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 40px;
+        height: 40px;
+        text-indent: 40px;
+        overflow: hidden;
+    }
+
+    .menu2{
+        background-color: #28857a;
+        padding: 10px;
+        margin: 0;
+        right: 0;
+    }
+
+    .menu, .menu2{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .menu2 li{
+        display: inline-block;
+        padding: 10px;
+        animation: bounceInLeft;
+        animation-duration: 0.6s;
+    }
+
+    .menu2 a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 10px;
+        padding: 15px 5px 15px 5px;
+    }
+
+    .menu2 a:hover{
+        color: #60e0d1;
+        margin: 10px;
+        padding: 15px 5px 15px 5px;
+        transition: all ease 0.40s;
+    }
+
+    #volverMenu{
+        display: none;
+    }
+
+    #primerFooter{
+        background-color: #28857a;
+        padding: 10px;
+        display: flex;
+    }
+
+    #primerFooter ul{
+        list-style: none;
+    }
+
+    #primerFooter a{
+        margin: 0 10px 0 10px;
+    }
+
+    .redesFooter{
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    #viajamas2{
+        background-image: url(../imagenes/iconografia/logo-footer.png);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 170px;
+        height: 50px;
+        text-indent: 170px;
+        overflow: hidden;
+        padding-top: 20px;
+    }
+
+    #instagram{
+        background-image: url(../imagenes/iconografia/instagram.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 35px;
+        height: 35px;
+        text-indent: 35px;
+        overflow: hidden;
+    }
+
+    #twitter{
+        background-image: url(../imagenes/iconografia/twitter.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 35px;
+        height: 35px;
+        text-indent: 35px;
+        overflow: hidden;
+    }
+
+    #facebook{
+        background-image: url(../imagenes/iconografia/facebook.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 35px;
+        height: 35px;
+        text-indent: 35px;
+        overflow: hidden;
+    }
+
+    #segundoFooter{
+        background-color: #184c46;
+        padding: 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .portada{
+        background-image: url(../imagenes/opacidad.png),
+        url(../imagenes/portada-inicio-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portada h2{
+        text-align: center;
+        color: white;
+        font-size: 80px;
+        text-transform: uppercase;
+    }
+
+    .portada p{
+        text-align: center;
+        color: rgb(221, 212, 212);
+        font-size: 18px;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .bienvenida{
+        background-color: #dcdcdc;
+        font-size: 18px;
+        justify-content: space-around;
+    }
+
+    #columnaUnoBienvenida{
+        margin: 70px;
+        width: 700px;
+    }
+
+    #columnaUnoBienvenida h3{
+        font-size: 35px;
+        text-align: left;
+    }
+
+    #columnaUnoBienvenida a{
+        background-color: #184c46;
+        color: white;
+        padding: 9px;
+        margin-top: 20px;
+        text-decoration: none;
+        transition: all ease 0.15s;
+        display: inline-block;
+        border-radius: 14px;
+    }
+
+    #columnaUnoBienvenida a:hover{
+        background-color: white;
+        color:#184c46;
+        transition: all 0.30s ease;
+    }
+
+    #columnaDosBienvenida{
+        margin: 70px;
+    }
+
+    #columnaDosBienvenida iframe{
+        border: none;
+    }
+
+    .seccionGuia{
+        padding: 50px 0 90px 0;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .seccionGuia h3{
+        text-align: center;
+        font-size: 30px;
+        padding: 0 0 20px 0;
+        color: #28857a; 
+    }
+
+    .contenedorCuadrados{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cuadradosGuia{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        color: grey;
+        position: relative;
+        margin: 30px;
+        fill: #00867A;
+        border-radius: 14px;
+        transition: all 0.25s ease;
+    }
+
+    .cuadradosGuia p{
+        bottom: 10px;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+    }
+
+    .cuadradosGuia:hover{
+        width: 200px;
+        height: 200px;
+        background-color: #184c46;
+        position: relative;
+        color: white;
+        fill: white;
+        transition: all 0.35s ease;
+        animation: pulse;
+        animation-duration: 0.5s; 
+    }
+
+    .cuadradosGuia svg{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 25px;
+        width: 100%;
+    }
+
+    .galeriaDeFotos h3{
+        color: #28857a; 
+        font-size: 30px;
+        background-color: #EBEBEB;
+        margin: 0 0 60px 0;
+        text-align: center;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+    }
+
+    .bx-wrapper{
+        padding: 40px 70px 40px 70px;
+        background-color: #212020;
+        border: none;
+        border-top: 20px #037277 solid;
+    }
+
+    .bx-wrapper img{
+        margin: 10px;
+    }
+
+    .bx-wrapper .bx-pager{
+        display: none;
+    }
+
+    .contedorImagenesGaleria{
+        display: flex;
+        justify-content: center;
+    }
+
+    .bx-wrapper .bx-controls-direction a{
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+
+    .seccionGuia2{
+        margin: 70px 0 70px 0;
+    }
+
+    .seccionGuia2 h3{
+        text-align: center;
+        font-size: 30px;
+        color: #28857a;
+    }
+
+    .seccionGuiacontenedor2{
+        justify-content: center;
+    }
+
+    .guias {
+        position: relative;
+        width: 360px;
+        margin: 40px 30px 40px 30px;
+    }
+
+    .image {
+        display: block;
+        border-radius: 14px;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #28857a;
+        overflow: hidden;
+        width: 360px;
+        height: 0;
+        transition: .5s ease;
+        border-radius: 0 0 14px 14px;
+    }
+
+    .guias:hover .overlay {
+        height: 40%;
+        width: 360px;
+    }
+
+    .guias img:hover{
+        height: 100%;
+    }
+
+    .text {
+        color: white;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .text p{
+        width: 330px;
+        font-size: 16px;
+        margin: 15px 4px 0 4px;
+    }
+
+    .text a{
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+        text-transform: uppercase;
+    }
+
+    .seccionApp{
+        background-image: url(../imagenes/celu2.jpg);
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-color: #A9BCD2;
+        width: 50%;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .seccionApp h4{
+        position: absolute;
+        right: 120px;
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+
+    .seccionApp p{
+        position: absolute;
+        right: 80px;
+        top: 100px;
+        font-size: 18px;
+    }
+
+    .seccionApp img{
+        width: 200px;
+        position: absolute;
+        bottom: 50px;
+        right: 185px;
+    }
+
+    .portadaTurismo{
+        background-image: url(../imagenes/opacidad.png),
+        url(../imagenes/fondo-portada-turismo.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portadaTurismo h2{
+        text-align: center;
+        color: white;
+        font-size: 80px;
+        text-transform: uppercase;
+    }
+
+    .portadaTurismo p{
+        text-align: center;
+        color: rgb(221, 212, 212);
+        font-size: 18px;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .porqueViajarNY{
+        background-image: url(../imagenes/estatua-fondo.png);
+        background-repeat: no-repeat;
+        background-size: 250px;
+        background-position: right;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .porqueViajarNY h3{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 70px;
+    }
+
+    .porqueViajarNY p{
+        text-align: center;
+        margin: 0 auto;
+        max-width: 40%;
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    #publicidadFormulario{
+        display: flex;
+        height: 300px;
+        background-image: url(../imagenes/opacidad.png),
+        url(../imagenes/formulario-publicidad-fondo.jpg);
+        background-color: rgba(0, 0, 0, 0.5);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #textoPublicidad{
+        width: 60%;
+        padding: 50px;
+        color: white;
+    }
+
+    #textoPublicidad h4{
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    #textoPublicidad p{
+        font-size: 20px;
+    }
+
+    #formularioPublicidad{
+        width: 40%;
+        padding-top: 95px;
+    }
+
+    #formularioPublicidad input[type=email]{
+        padding: 15px;
+        width: 70%;
+        border: none;
+        outline: none;
+    }
+
+    .check{
+        align-items: baseline;
+    }
+
+    #formularioPublicidad input[type=checkbox]{
+        margin: 15px 10px 15px 0;
+        cursor: pointer;
+    }
+
+    #formularioPublicidad input[type=submit]{
+        background-color: red;
+        color: white;
+        padding: 13px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        border-radius: 14px;
+    }
+
+    #formularioPublicidad input[type=submit]:hover{
+        background-color: white;
+        color: red;
+        padding: 13px;
+        text-transform: uppercase;
+        border: none;
+        transition: all 0.30s ease;
+    }
+
+    .check{
+        display: flex;
+        color: white;
+    }
+
+    .MonumentosYAtracciones{
+        justify-content: space-around;
+        padding: 60px;
+    }
+
+    .MonumentosYAtracciones a{
+        color: red;
+    }
+
+    .MonumentosYAtracciones h2{
+        text-align: center;
+        font-size: 30px;
+        color: #28857a;
+    }
+
+    .FilaMonumentos{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .contenedorAtracciones{
+        width: 309px;
+        margin: 70px 20px 40px 20px;
+        border-radius: 14px;
+        background-color: white;
+        box-shadow:  50px 50px 100px #fcfcfc,
+                    -50px -50px 100px #fcfcfc;
+        cursor: pointer;
+    }
+
+    .contenedorAtracciones p{
+        padding: 0 50px 10px 35px;
+    }
+
+    .contenedorAtracciones h4{
+        padding: 0 50px 10px 35px;
+    }
+
+    .imagenZoom{
+        transition: transform 0.5s;
+        height: 210px;
+        width: 309px;
+        margin: 0 auto;
+    }
+
+    .imagenZoom:hover{
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.1); 
+    }
+
+    .contenedorZoom{
+        overflow: hidden;
+        height: 210px;
+        width: 309px;
+        border-radius: 14px 14px 0 0;
+    }
+
+    .excursiones{
+        background-color: #dcdcdc;
+        padding: 30px 0;
+        text-decoration: none;
+    }
+
+    .excursiones a{
+        text-decoration: none;
+        color: black;
+        width: 50%;
+    }
+
+    .excursiones h3{
+        font-size: 30px;
+        text-align: center;
+        color: #28857a;
+        padding: 30px 0px 50px 0px;
+    }
+
+    .contenedorExsursiones{
+        background-color: white;
+        width: 50%;
+        margin: 25px auto 25px auto;
+        height: 288px;
+        padding: 15px;
+        border-radius: 14px;
+        height: auto;
+    }
+
+    .contenedorExsursiones:hover{
+        background-color: rgb(233, 233, 233);
+        transition: all ease 0.35s;
+    }
+
+    .contenidoContenedor{
+        width: 60%;
+        padding: 25px;
+        
+    }
+
+    .contenidoContenedor h4{
+        margin: 0 0 10px 0;
+        color: #184c46;
+        font-size: 20px;
+    }
+
+    .contenidoContenedor p{
+        margin: 30px 0 50px 0;
+    }
+
+    .precio{
+        display: block;
+        text-align: right;
+        font-size: 25px;
+        color: #184c46;
+    }
+
+    .opiniones{
+        color: #184c46;
+    }
+
+    .fondoModal{
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fondoModal:target{
+        display: flex;
+        z-index: 999999;
+    }
+
+    .ventanaModal{
+        width: 500px;
+        height: 450px;
+        background-color:white;
+        padding: 30px;
+        position: absolute;
+        border-radius: 14px;
+        animation: pulse;
+        animation-duration: 0.5s; 
+    }
+
+    .ventanaModal h4{
+        font-size: 35px;
+        margin: 20px 0 35px 0;
+        color: #184c46;
+    }
+
+    .ventanaModal a{
+        background-image: url(../imagenes/iconografia/atras.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        background-size: 40px;
+        width: 40px;
+        height: 40px;
+        text-indent: 50px;
+        overflow: hidden;
+    }
+
+    .ventanaModal input{
+        margin: 15px 0;
+        display: block;
+        background-color: rgb(230, 230, 230);
+        border: none;
+        padding: 10px;
+        border-radius: 14px;
+    }
+
+    .ventanaModal select{
+        display: block;
+        margin-top: 15px;
+        background-color: rgb(230, 230, 230);
+        border: none;
+        padding: 10px;
+        border-radius: 14px;
+    }
+
+    .ventanaModal input[type="submit"]{
+        background-color: #184c46;
+        border: none;
+        padding: 15px;
+        font-size: 15px;
+        border-radius: 14px;
+        color: white;
+        position: absolute;
+        right: 135px;
+        bottom: 20px;
+    }
+
+    .ventanaModal input[type="submit"]:hover{
+        background-color: #2e9488;
+        color: white;
+        cursor: pointer;
+        transition: all 0.30s ease;
+    }
+
+    .ventanaModal img{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        right: 30px;
+        top: 195px;
+        border-radius: 14px;
+    }
+
+    .portadaTransporte{
+        background-image: url(../imagenes/opacidad.png),
+        url(../imagenes/fondo-portada-transporte.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portadaTransporte h2{
+        text-align: center;
+        color: white;
+        font-size: 80px;
+        text-transform: uppercase;
+    }
+
+    .portadaTransporte p{
+        text-align: center;
+        color: rgb(221, 212, 212);
+        font-size: 18px;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .seccionTiposDeTransporte{
+        padding: 30px 0;
+    }
+
+    .seccionTiposDeTransporte h3{
+        text-align: center;
+        font-size: 30px;
+        color: #28857a;
+    }
+
+    .TiposDeTransporte{
+        justify-content: center;
+    }
+
+    .circulosTransporte{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: white;
+        color: grey;
+        position: relative;
+        margin: 30px 50px;
+        fill: #00867A;
+        border-radius: 14px;
+        transition: all 0.25s ease;
+    }
+
+    .circulosTransporte:hover{
+        animation: pulse;
+        animation-duration: 0.5s; 
+    }
+
+    .circulosTransporte svg{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        width: 100%;
+    }
+
+    .circulosTransporte:hover{
+        background-color: #184c46;
+        position: relative;
+        color: white;
+        fill: white;
+        transition: all 0.35s ease;
+    }
+
+    .seccionTransportes{
+        padding: 40px;
+    }
+
+    .contenedorSeccion{
+        position: relative;
+        margin: 0 0 240px 0;
+        justify-content: center;
+        display: flex;
+    }
+
+    .contenidoTransportes{
+        width: 500px;
+        height: 200px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        bottom: -180px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+    }
+
+    .contenidoTransportes h4{
+        color: #184c46;
+        font-size: 24px;
+    }
+
+    .contenidoTransportes a{
+        text-decoration: none;
+        color: red;
+        display: block;
+        text-align: end;
+    }
+
+    .seccionRutaContenedor{
+        background-color: #dcdcdc;
+        padding: 80px;
+        display: flex;
+    }
+
+    .app{
+        width: 65%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .contenedorIzquierda{
+        background-color: white;
+        width: 50%;
+    }
+
+    .contenedorDerecha{
+        width: 50%;
+    }
+
+    .botonesTrasnportes{
+        display: flex;
+        background-color: #aaaaaa;
+        width: 100%;
+    }
+
+    .botonesTrasnportes li{
+        display: inline-block;
+    }
+
+    .botonesTrasnportes a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+        margin: 0 25px;
+        display: block;
+        text-indent: 40px;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #caminar{
+        background-image: url(../imagenes/iconografia/caminar.png);
+    }
+
+    #bici{
+        background-image: url(../imagenes/iconografia/bici.png);
+    }
+
+    #tren{
+        background-image: url(../imagenes/iconografia/tren.png);
+    }
+
+    #auto{
+        background-image: url(../imagenes/iconografia/auto.png);
+    }
+
+    .formularioRuta{
+        padding: 50px;
+    }
+
+    .formularioRuta h4{
+        margin-top: 0;
+    }
+
+    .formularioRuta input{
+        display: block;
+        margin: 40px 0;
+        background-color: #d5d5d5;
+        border: none;
+        padding: 10px;
+        border-radius: 14px;
+        outline: none;
+    }
+
+    .formularioRuta input[type="submit"]{
+        color: white;
+        text-transform: uppercase;
+        padding: 15px;
+        background-color: #184c46;
+        cursor: pointer;
+    }
+
+    .formularioRuta input[type="submit"]:hover{
+        background-color: #2e9488;
+        transition: all 0.30s ease;
+    }
+
+    .contenedorFormulario2{
+        position: absolute;
+        background-color: #28857a;
+        border-radius: 14px;
+        top: 200px;
+        right: 40px;
+        width: 30%;
+        color: white;
+        display: flex;
+    }
+
+    #imagenFormulario{
+        background-image: url(../imagenes/fondo-formulario-contacto-2.jpg);
+        background-repeat: contain;
+        background-size: 380px;
+        border-radius: 0 14px 14px 0;
+        width: 60%;
+    }
+
+    #contenedorFormulario{
+        position: relative;
+    }
+
+    #contenedorFormulario iframe{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .formularioContacto{
+        width: 35%;
+        padding: 25px;
+        width: 40%;
+    }
+
+    .formularioContacto input{
+        display: block;
+        margin: 15px 0 15px 0;
+        padding: 9px;
+        width: 95%; 
+        border: none;
+        outline: none;
+        border-radius: 14px;
+    }
+
+    .formularioContacto textarea{
+        display: block;
+        margin: 10px 0 10px 0;
+        resize: none;
+        width: 100%;
+        border: none;
+        border-radius: 14px;
+        padding: 5px;
+        outline: none;
+    }
+
+    .formularioContacto input[type="submit"]{
+        background-color: #184c46;
+        color: white;
+        width: 90px;
+        cursor: pointer;
+        margin-top: 25px;
+        margin-left: 65px;
+        border-radius: 14px;
+        padding: 15px;
+    }
+
+    .formularioContacto input[type="submit"]:hover{
+        background-color: white;
+        color: #184c46;
+        transition: all 0.30s ease;
+    }
+
+    .gracias{
+        background-color: white;
+        width: 80%;
+        height: 100px;
+        color: #28857a;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: #184c46 10px solid;
+        margin-top: 400px;
+    }
+
+    .gracias h1{
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 1440px){
+
+        .menu{
+            background-color: #fafafa;
+            margin: 0;
+            padding: 8px ;
+        }
+
+        #logo{
+            background-size: 140px;
+            height: 40px;
+        }
+
+        #carrito{
+            background-size: 35px;
+        }
+
+        #info{
+            background-size: 35px;
+        }
+
+        #usuario{
+            background-size: 35px;
+        }
+
+        .menu li{
+            padding: 0;
+            margin: auto 5px;
+        }
+
+        .menu2{
+            padding: 5px 10px;
+        }
+
+        .menu2 a{
+            font-size: 16px;
+        }
+    
+        #viajamas2{
+            background-size: 130px;
+        }
+    
+        #instagram{
+            background-size: 33px;
+        }
+    
+        #twitter{
+            background-size: 33px;
+        }
+    
+        #facebook{
+            background-size: 33px;
+        }
+    
+        #segundoFooter small{
+            font-size: 12px;
+        }
+
+        .portada h2{
+            font-size: 3.125rem;
+            text-transform: uppercase;
+        }
+
+        .bienvenida{
+            height: auto;
+        }
+    
+        #columnaUnoBienvenida{
+            width: 50%;
+            margin: 40px;
+        }
+    
+        #columnaDosBienvenida{
+            position: unset;
+            margin: 40px;
+        }
+    
+        #columnaDosBienvenida iframe{
+            position: unset;
+            width: 500px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .seccionGuia{
+            width: 80%;
+            padding: 40px 60px;
+            margin: 0 auto;
+        }
+
+        .seccionGuiacontenedor2{
+            flex-direction: column;
+        }
+    
+        .contenedorCuadrados{
+            flex-wrap: wrap;
+        }
+    
+        .bx-wrapper{
+            padding: 30px 0;
+        }
+    
+        .bx-wrapper img{
+            margin: 0;
+        }
+    
+        .guias{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .seccionGuiacontenedor2{
+            flex-direction: unset;
+            flex-wrap: wrap;
+            margin: 40px auto;
+        }
+    
+        .seccionApp{
+            width: 50%;
+            margin: 50px auto;
+            background-image: none;
+            padding: 20px;
+        }
+
+        .seccionApp h4{
+            position: unset;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .seccionApp p{
+            position: unset;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .seccionApp img{
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    
+        .portadaTurismo{
+            height: 100vh;
+        }
+    
+        .portadaTurismo h2{
+            font-size: 3.125rem;
+            text-align: center;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding: 0 5px;
+            text-transform: uppercase;
+        }   
+
+        .porqueViajarNY{
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            background-size: 0;
+            padding: 15px 0;
+            height: auto;
+            background-size: 200px;
+        }
+    
+        .porqueViajarNY h3{
+            text-align: center;
+            font-size: 25px;
+            margin: 30px 0;
+        }
+    
+        .porqueViajarNY p{
+            max-width: 60%;
+            padding: 0 20px;
+            margin: 30px auto;
+        }
+    
+        #publicidadFormulario{
+            width: 100%;
+            height: auto;
+        }
+    
+        #textoPublicidad{
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+        }
+    
+        #textoPublicidad h4{
+            font-size: 20px;
+            text-align: center;
+        }
+    
+        #textoPublicidad p{
+            font-size: 15px;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        #formularioPublicidad{
+            width: 100%;
+            padding: 30px 30px 10px 30px;
+        }
+    
+        #formularioPublicidad form{
+            width: 80%;
+        }
+    
+        #formularioPublicidad input[type=email]{
+            width: 90%;
+        }
+    
+        #formularioPublicidad input[type=submit]{
+            display: block;
+            margin: 5px 0;
+        }
+    
+        .MonumentosYAtracciones{
+            padding: 0;
+        }
+    
+        .MonumentosYAtracciones h2{
+            font-size: 25px;
+            padding-top: 30px;
+        }
+    
+        .FilaMonumentos{
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+        }
+    
+        .contenedorAtracciones{
+            flex-wrap: wrap;
+            margin: 35px 15px;
+            box-shadow: none;
+        }
+    
+        .excursiones a{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+    
+        .contenedorExsursiones{
+            display: flex;
+            width: 100%;
+            margin: 40px auto;
+            height: auto;
+        }
+
+        .imagenContenedorWashington{
+            width: 40%;
+        }
+
+        .imagenContenedorWashington img{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .imagenContenedorHelicoptero{
+            width: 40%;
+        }
+        
+        .imagenContenedorHelicoptero img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .imagenContenedorTour{
+            width: 40%;
+        }
+
+        .imagenContenedorTour img{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .contenidoContenedor{
+            width: 60%;
+            padding: 25px;
+        }
+        
+        .contenidoContenedor h4{
+            margin: 0 0 10px 0;
+            color: #184c46;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .contenidoContenedor p{
+            margin: 30px 0 50px 0;
+        }
+        
+        .precio{
+            display: block;
+            text-align: right;
+            font-size: 25px;
+            color: #184c46;
+        }
+        
+        .opiniones{
+            color: #184c46;
+        }
+
+        .ventanaModal{
+            width: 500px;
+            height: 440px;
+            background-color:white;
+            padding: 20px;
+            position: absolute;
+            border-radius: 14px;
+            animation: pulse;
+            animation-duration: 0.5s; 
+        }
+    
+        .portadaTransporte{
+            height: 100vh;
+        }
+    
+        .portadaTransporte h2{
+            font-size: 3.125rem;
+            text-align: center;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding: 0 5px;
+            text-transform: uppercase;
+        }   
+    
+        .seccionTiposDeTransporte{
+            flex-direction: column;
+        }
+    
+        .TiposDeTransporte{
+            flex-wrap: wrap;
+        }
+    
+        .seccionTransportes{
+            padding: 0;
+        }
+    
+        .contenedorSeccion{
+            width: 70%;
+            flex-direction: column;
+            margin: 40px auto;
+        }
+    
+        .contenedorImagenes{
+            margin: 0 auto;
+            width: 100%;
+            height: 0;
+            padding-bottom: 50.55555555555556%;
+            position: relative;
+        }
+    
+        .contenedorImagenes img{
+            width: 80%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            position: absolute;
+        }
+    
+        .contenidoTransportes{
+            position: unset;
+            width: 80%;
+            padding: 10px 0;
+            height: auto;
+        }
+    
+        .contenidoTransportes h4{
+            margin: 10px auto;
+            max-width: 90%;
+        }
+    
+        .contenidoTransportes p{
+            max-width: 90%;
+            margin: 15px auto;
+        }
+    
+        .contenidoTransportes a{
+            text-align: end;
+            display: block;
+            max-width: 90%;
+            margin: 10px auto;
+        }
+    
+        .seccionRutaContenedor{
+            padding: 50px 10px;
+        }
+    
+        .app{
+            width: 100%;
+            height: auto;
+        }
+    
+        .botonesTrasnportes ul{
+            padding: 0;
+            margin: 15px auto;
+        }
+    
+        .botonesTrasnportes a{
+            margin: 0 10px;
+        }
+    
+        .contenedorIzquierda{
+            width: 45%;
+        }
+    
+        .contenedorDerecha{
+            display: none;
+        }
+    
+        .formularioRuta{
+            padding: 30px 5px;
+        }
+    
+        .formularioRuta h4{
+            text-align: center;
+            margin: 10px 0;
+        }
+    
+        .formularioRuta input{
+            max-width: 50%;
+            display: block;
+            margin: 40px auto;
+        }
+    
+        .formularioRuta input[type="submit"]{
+            margin: 0 auto;
+        }
+    
+        .contenedorFormulario2{
+            width: 35%;
+            margin: 40px auto;
+            top: 90px;
+        }
+    
+        #imagenFormulario{
+            display: none;
+        }
+    
+        .formularioContacto{
+            width: 100%;
+            padding: 20px 20px 0 20px;
+            height: 460px;
+        }
+    
+        .formularioContacto label{
+            justify-content: center;
+        }
+    
+        .formularioContacto textarea{
+            width: 100%;
+            height: 20%;
+        }
+    
+        .formularioContacto input[type="submit"]{
+            margin: 15px auto 2px auto;
+        }
+}
+
+@media (max-width: 800px){
+
+    .contenedormenu1{
+        border-bottom: 15px #28857a solid;
+        padding: 8px 10px;
+    }
+
+    .contenedormenu1 h1{
+        padding: 0;
+    }
+
+    #logo{
+        background-size: 120px;
+        width: 120px;
+        height: 50px;
+    }
+
+    .menu li{
+        display: none;
+    }
+
+    #iconoHamburguesa{
+        background-image: url(../imagenes/iconografia/menu.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 35px;
+        display: block;
+        width: 83px;
+        height: 40px;
+        text-indent: 60px;
+        overflow: hidden;
+        margin: 3px 8px;
+    }
+
+    .menu2{
+        display: none;
+        flex-direction: column;
+        padding-bottom: 100vh;
+    }
+
+    .menu2 ul{
+        background-color: red;
+    }
+
+    .menu2 li{
+        animation: none;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .menu2 a{
+        font-size: 20px;
+    }
+
+    .menu2:target{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation: fadeInLeft;
+        animation-duration: 0.6s;
+    }
+
+    #volverMenu{
+        background-image: url(../imagenes/iconografia/atras.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 35px;
+        display: block;
+        width: 30px;
+        text-indent: 35px;
+        overflow: hidden;
+    }
+
+    #viajamas2{
+        background-size: 110px;
+    }
+
+    #instagram{
+        background-size: 28px;
+    }
+
+    #twitter{
+        background-size: 28px;
+    }
+
+    #facebook{
+        background-size: 28px;
+    }
+
+    #segundoFooter small{
+        font-size: 11px;
+    }
+
+    .portada{
+        height: 60vh;
+    }
+
+    .portada h2{
+        font-size: 3.125rem;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0 5px;
+        text-transform: uppercase;
+    }   
+
+    .portada p{
+        display: none;
+    }
+
+    .bienvenida{
+        flex-direction: column;
+    }
+
+    #columnaUnoBienvenida{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #columnaUnoBienvenida h3{
+        text-align: center;
+    }
+
+    #columnaUnoBienvenida p{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    #columnaDosBienvenida{
+        margin: 30px 0;
+        width: 100%;
+        height: 0;
+        padding-bottom: 59.166666666666664%;
+        position: relative;
+    }
+
+    #columnaDosBienvenida iframe{
+        width: 90%;
+        height: 100%;
+        padding-bottom: 59.166666666666664%;
+        border: none;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .seccionGuia{
+        width: 90%;
+        padding: 40px 20px;
+        margin: 0 auto;
+    }
+
+    .seccionGuiacontenedor2{
+        flex-direction: column;
+    }
+
+    .contenedorCuadrados{
+        flex-wrap: wrap;
+    }
+
+    .bx-wrapper{
+        padding: 30px 0;
+    }
+
+    .bx-wrapper img{
+        margin: 0;
+    }
+
+    .bx-next{
+        display: none;
+    }
+
+    .bx-prev{
+        display: none;
+    }
+
+    .guias{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .seccionApp{
+        width: 70%;
+    }
+
+    .portadaTurismo{
+        height: 60vh;
+    }
+
+    .portadaTurismo h2{
+        font-size: 3.125rem;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0 5px;
+        text-transform: uppercase;
+    }   
+
+    .portadaTurismo p{
+        display: none;
+    }
+
+    .porqueViajarNY{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        background-size: 0%;
+        padding: 15px 0;
+        height: auto;
+    }
+
+    .porqueViajarNY h3{
+        text-align: center;
+        font-size: 25px;
+        margin: 30px 0;
+    }
+
+    .porqueViajarNY p{
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 30px 0;
+    }
+
+    #publicidadFormulario{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    #textoPublicidad{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #textoPublicidad h4{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #textoPublicidad p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #formularioPublicidad{
+        width: 100%;
+        padding: 0;
+    }
+
+    #formularioPublicidad form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #formularioPublicidad input[type=email]{
+        width: 90%;
+    }
+
+    #formularioPublicidad input[type=submit]{
+        display: block;
+        margin: 20px 0;
+    }
+
+    .MonumentosYAtracciones{
+        padding: 0;
+    }
+
+    .MonumentosYAtracciones h2{
+        font-size: 25px;
+        padding-top: 30px;
+    }
+
+    .FilaMonumentos{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contenedorAtracciones{
+        flex-wrap: wrap;
+        margin: 35px 15px;
+        box-shadow: none;
+    }
+
+    .excursiones a{
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .contenedorExsursiones{
+        padding: 0;
+        margin: 25px 0;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+        background-color: #dcdcdc;
+        height: auto;
+    }
+
+    .imagenContenedorWashington{
+        margin: 0 auto;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75.98944591029024%;
+        position: relative;
+        background-color: #dcdcdc;
+    }
+
+    .imagenContenedorWashington img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .imagenContenedorHelicoptero{
+        margin: 0 auto;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75.98944591029024%;
+        position: relative;
+    }
+
+    .imagenContenedorHelicoptero img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .imagenContenedorTour{
+        margin: 0 auto;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75.98944591029024%;
+        position: relative;
+    }
+
+    .imagenContenedorTour img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 15px 15px 0 0;
+        background-color: #dcdcdc;
+    }
+
+    .contenidoContenedor{
+        background-color: white;
+        width: 100%;
+        padding: 20px 0;
+        margin: 0;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .contenidoContenedor h4{
+        margin: 0;
+        text-align: center;
+    }
+
+    .contenidoContenedor span{
+        margin: 0;
+        text-align: center;
+        display: block;
+        margin: 5px auto;
+    }
+
+    .contenidoContenedor p{
+        margin: 15px auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .ventanaModal{
+        width: 70%;
+        padding: 20px;
+    }
+
+    .ventanaModal a{
+        height: 30px;
+        width: 30px;
+        background-size: 30px;
+    }
+
+    .ventanaModal h4{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .ventanaModal img{
+        display: none;
+    }
+
+    .ventanaModal label{
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .ventanaModal input{
+        margin: 15px auto;
+    }
+
+    .ventanaModal select{
+        margin: 15px auto;
+    }
+
+    .ventanaModal input[type="submit"]{
+        position: unset;
+        margin: 20px auto;
+    }
+
+    .portadaTransporte{
+        height: 60vh;
+    }
+
+    .portadaTransporte h2{
+        font-size: 3.125rem;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0 5px;
+        text-transform: uppercase;
+    }   
+
+    .portadaTransporte p{
+        display: none;
+    }
+
+    .seccionTiposDeTransporte{
+        flex-direction: column;
+    }
+
+    .TiposDeTransporte{
+        flex-wrap: wrap;
+    }
+
+    .seccionTransportes{
+        padding: 0;
+    }
+
+    .contenedorSeccion{
+        width: 100%;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+
+    .contenedorImagenes{
+        margin: 0 auto;
+        width: 100%;
+        height: 0;
+        padding-bottom: 50.55555555555556%;
+        position: relative;
+    }
+
+    .contenedorImagenes img{
+        width: 80%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        position: absolute;
+    }
+
+    .contenidoTransportes{
+        position: unset;
+        width: 80%;
+        padding: 10px 0;
+        height: auto;
+    }
+
+    .contenidoTransportes h4{
+        margin: 10px auto;
+        max-width: 90%;
+    }
+
+    .contenidoTransportes p{
+        max-width: 90%;
+        margin: 15px auto;
+    }
+
+    .contenidoTransportes a{
+        text-align: end;
+        display: block;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .seccionRutaContenedor{
+        padding: 50px 10px;
+    }
+
+    .app{
+        width: 100%;
+        height: auto;
+    }
+
+    .botonesTrasnportes ul{
+        padding: 0;
+        margin: 15px auto;
+    }
+
+    .botonesTrasnportes a{
+        margin: 0 10px;
+    }
+
+    .contenedorIzquierda{
+        width: 60%;
+    }
+
+    .contenedorDerecha{
+        display: none;
+    }
+
+    .formularioRuta{
+        padding: 30px 5px;
+    }
+
+    .formularioRuta h4{
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .formularioRuta input{
+        max-width: 50%;
+        display: block;
+        margin: 40px auto;
+    }
+
+    .formularioRuta input[type="submit"]{
+        margin: 0 auto;
+    }
+
+
+    .contenedorFormulario2{
+        position: unset;
+        width: 70%;
+        margin: 40px auto;
+    }
+
+    #imagenFormulario{
+        display: none;
+    }
+
+    .formularioContacto{
+        width: 100%;
+    }
+
+    .formularioContacto label{
+        justify-content: center;
+    }
+
+    .formularioContacto textarea{
+        width: 100%;
+    }
+
+    .formularioContacto input[type="submit"]{
+        margin: 25px auto 10px auto;
+    }
+}
+
+@media (max-width: 480px){
+
+    .contenedormenu1{
+        border-bottom: 15px #28857a solid;
+        padding: 8px 10px;
+    }
+
+    .contenedormenu1 h1{
+        padding: 0;
+    }
+
+    #logo{
+        background-size: 120px;
+        width: 120px;
+        height: 50px;
+    }
+
+    .menu li{
+        display: none;
+    }
+
+    #iconoHamburguesa{
+        background-image: url(../imagenes/iconografia/menu.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 35px;
+        display: block;
+        width: 120px;
+        height: 40px;
+        text-indent: 70px;
+        overflow: hidden;
+        margin: 3px 8px;
+    }
+
+    .menu2{
+        display: none;
+        flex-direction: column;
+        padding-bottom: 100vh;
+    }
+
+    .menu2 ul{
+        background-color: red;
+    }
+
+    .menu2 li{
+        animation: none;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .menu2 a{
+        font-size: 1.25rem;
+    }
+
+    .menu2:target{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation: fadeInLeft;
+        animation-duration: 0.6s;
+    }
+
+    #volverMenu{
+        background-image: url(../imagenes/iconografia/atras.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 35px;
+        display: block;
+        width: 30px;
+        text-indent: 35px;
+        overflow: hidden;
+    }
+
+    .redesFooter{
+        padding: 0;
+    }
+
+    #viajamas2{
+        background-size: 100px;
+        width: 100px;
+        padding: 10px 48px;
+        background-position: center left;
+    }
+
+    #instagram{
+        background-size: 25px;
+    }
+
+    #twitter{
+        background-size: 25px;
+    }
+
+    #facebook{
+        background-size: 25px;
+    }
+
+    #segundoFooter small{
+        font-size: 0.5625rem;
+    }
+
+    .portada{
+        height: 60vh;
+    }
+
+    .portada h2{
+        font-size: 3.125rem;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0 5px;
+        text-transform: uppercase;
+    }   
+
+    .portada p{
+        display: none;
+    }
+
+    .bienvenida{
+        flex-direction: column;
+    }
+
+    #columnaUnoBienvenida{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #columnaUnoBienvenida h3{
+        text-align: center;
+    }
+
+    #columnaUnoBienvenida p{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    #columnaDosBienvenida{
+        margin: 30px 0;
+        width: 100%;
+        height: 0;
+        padding-bottom: 59.166666666666664%;
+        position: relative;
+    }
+
+    #columnaDosBienvenida iframe{
+        width: 90%;
+        height: 100%;
+        padding-bottom: 59.166666666666664%;
+        border: none;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .seccionGuia{
+        padding: 40px 0;
+    }
+
+    .seccionGuiacontenedor2{
+        flex-direction: column;
+    }
+
+    .contenedorCuadrados{
+        flex-wrap: wrap;
+    }
+
+    .bx-wrapper{
+        padding: 30px 0;
+    }
+
+    .bx-wrapper img{
+        margin: 0;
+    }
+
+    .bx-next{
+        display: none;
+    }
+
+    .bx-prev{
+        display: none;
+    }
+
+    .guias{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .guias img{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .overlay{
+        display: none;
+    }
+
+    .seccionApp{
+        width: 70%;
+        margin: 50px auto;
+        background-image: none;
+        padding: 20px;
+    }
+
+    .seccionApp h4{
+        position: unset;
+        text-align: center;
+        font-size: 1.5625rem;
+        margin: 20px 0;
+    }
+
+    .seccionApp p{
+        position: unset;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .seccionApp img{
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .portadaTurismo{
+        height: 60vh;
+    }
+
+    .portadaTurismo h2{
+        font-size: 3.125rem;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0 5px;
+        text-transform: uppercase;
+    }   
+
+    .portadaTurismo p{
+        display: none;
+    }
+
+    .porqueViajarNY{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        background-size: 0%;
+        padding: 15px 0;
+        height: auto;
+    }
+
+    .porqueViajarNY h3{
+        text-align: center;
+        font-size: 1.5625rem;
+        margin: 30px 0;
+    }
+
+    .porqueViajarNY p{
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 30px 0 10px 0;
+    }
+
+    #publicidadFormulario{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #textoPublicidad{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        height: auto;
+    }
+
+    #textoPublicidad h4{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #textoPublicidad p{
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    #formularioPublicidad{
+        width: 100%;
+        padding: 0;
+    }
+
+    #formularioPublicidad form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #formularioPublicidad input[type=email]{
+        width: 90%;
+    }
+
+    #formularioPublicidad input[type=submit]{
+        margin: 0 auto;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .MonumentosYAtracciones{
+        padding: 0;
+    }
+
+    .MonumentosYAtracciones h2{
+        font-size: 1.5625rem;
+        padding-top: 30px;
+    }
+
+    .FilaMonumentos{
+        flex-direction: column;
+    }
+
+    .contenedorAtracciones{
+        flex-wrap: wrap;
+        margin: 30px auto 30px auto;
+        box-shadow: none;
+    }
+
+    .excursiones a{
+        display: block;
+        width: 100%;
+    }
+
+    .contenedorExsursiones{
+        padding: 0;
+        margin: 25px 0;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+        background-color: #dcdcdc;
+        height: auto;
+    }
+
+    .imagenContenedorWashington{
+        margin: 0 auto;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75.98944591029024%;
+        position: relative;
+    }
+
+    .imagenContenedorWashington img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 0;
+    }
+
+    .imagenContenedorHelicoptero{
+        margin: 0 auto;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75.98944591029024%;
+        position: relative;
+    }
+
+    .imagenContenedorHelicoptero img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 0;
+    }
+
+    .imagenContenedorTour{
+        margin: 0 auto;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75.98944591029024%;
+        position: relative;
+    }
+
+    .imagenContenedorTour img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 0;
+    }
+
+    .contenidoContenedor{
+        background-color: white;
+        width: 100%;
+        padding: 20px 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .contenidoContenedor h4{
+        margin: 0;
+        text-align: center;
+    }
+
+    .contenidoContenedor span{
+        margin: 0;
+        text-align: center;
+        display: block;
+        margin: 5px auto;
+    }
+
+    .contenidoContenedor p{
+        margin: 15px auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .ventanaModal{
+        width: 70%;
+    }
+
+    .ventanaModal h4{
+        text-align: center;
+    }
+
+    .ventanaModal img{
+        display: none;
+    }
+
+    .ventanaModal label{
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .ventanaModal input{
+        margin: 15px auto;
+    }
+
+    .ventanaModal select{
+        margin: 15px auto;
+    }
+
+    .ventanaModal input[type="submit"]{
+        position: unset;
+        margin: 20px auto;
+    }
+
+    .portadaTransporte{
+        height: 60vh;
+    }
+
+    .portadaTransporte h2{
+        font-size: 3.125rem;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0 5px;
+        text-transform: uppercase;
+    }   
+
+    .portadaTransporte p{
+        display: none;
+    }
+
+    .seccionTiposDeTransporte{
+        flex-direction: column;
+    }
+
+    .TiposDeTransporte{
+        flex-wrap: wrap;
+    }
+
+    .seccionTransportes{
+        padding: 0;
+    }
+
+    .contenedorSeccion{
+        width: 100%;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+
+    .contenedorImagenes{
+        margin: 0 auto;
+        width: 100%;
+        height: 0;
+        padding-bottom: 50.55555555555556%;
+        position: relative;
+    }
+
+    .contenedorImagenes img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .contenidoTransportes{
+        position: unset;
+        width: 100%;
+        padding: 10px 0;
+        height: auto;
+    }
+
+    .contenidoTransportes h4{
+        margin: none;
+        text-align: center;
+    }
+
+    .contenidoTransportes p{
+        text-align: center;
+        max-width: 90%;
+        margin: 15px auto;
+    }
+
+    .contenidoTransportes a{
+        text-align: center;
+        display: block;
+    }
+
+    .seccionRutaContenedor{
+        padding: 50px 10px;
+    }
+
+    .app{
+        width: 100%;
+        height: auto;
+    }
+
+    .botonesTrasnportes ul{
+        padding: 0;
+        margin: 15px auto;
+    }
+
+    .botonesTrasnportes a{
+        margin: 0 10px;
+    }
+
+    .contenedorIzquierda{
+        width: 85%;
+    }
+
+    .contenedorDerecha{
+        display: none;
+    }
+
+    .formularioRuta{
+        padding: 30px 5px;
+    }
+
+    .formularioRuta h4{
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .formularioRuta input{
+        max-width: 50%;
+        display: block;
+        margin: 40px auto;
+    }
+
+    .formularioRuta input[type="submit"]{
+        margin: 0 auto;
+        font-size: 0.6875rem;
+    }
+
+    .contenedorFormulario2{
+        position: unset;
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    #imagenFormulario{
+        display: none;
+    }
+
+    .formularioContacto{
+        width: 100%;
+    }
+
+    .formularioContacto label{
+        justify-content: center;
+    }
+
+    .formularioContacto input[type="submit"]{
+        margin: 25px auto 10px auto;
+    }
+
+}   
